@@ -1,0 +1,616 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="fav.png"/>
+<link rel="shortcut icon" type="image/png" href="fav.png"/>
+<meta name="description" content="Happy Birthday Sweet Heart,Many Many Happy Returns of the day,Keep Smile....">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<title>	&#x2764 Happy Birthday SweetHeart &#x2764</title>
+<style>
+	body {
+  margin: 0;
+		background-color: #000;
+	overflow: hidden;
+  cursor: crosshair;
+	
+}
+ #loading{
+     position: fixed!important;
+	width: 100%!important;
+	height: 100vh!important;
+  background: linear-gradient(to right, rgba(241,255,11,0.2),rgba(61,242,245,0.3)),url(bg2.jpg);
+    z-index:999999!important;
+	 
+	 background-size: contain;
+	 background-position: ;
+	 filter: brightness(50px);
+	 background-attachment: fixed;
+}
+
+canvas{display:block;
+z-index:9999;}
+
+	.img1{
+		
+		position: absolute;
+	
+		background-image:linear-gradient( rgba(0,4,92,0.5), rgba(0,4,92,0.5)),url(123.jpg);
+width: 100%;
+		overflow: hidden;
+		height: 100%;
+		background-size: contain;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.3;
+		border-top: 2px solid rgba(232,181,4,1.00);
+			
+
+	}
+
+
+
+/*
+ Candle
+*/
+
+.candle {
+  background: #fbf090;
+  border-radius: 10px;
+  position: absolute;
+  top: 1500px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 6px;
+  height: 40px;
+  transform: translateY(-100px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+	z-index: 1;
+}
+.candle:after,
+.candle:before {
+  background: rgba(28, 235, 38, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.candle:after {
+  top: 25%;
+  left: 0;
+}
+.candle:before {
+  top: 45%;
+  left: 0;
+}
+
+/* 
+ Fire
+*/
+
+.fire {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 20px;
+}
+.fire:nth-child(1) {
+  animation: fire 2s 6.5s infinite;
+}
+.fire:nth-child(2) {
+  animation: fire 1.5s 6.5s infinite;
+}
+.fire:nth-child(3) {
+  animation: fire 1s 6.5s infinite;
+}
+.fire:nth-child(4) {
+  animation: fire 0.5s 6.5s infinite;
+}
+.fire:nth-child(5) {
+  animation: fire 0.2s 6.5s infinite;
+}
+
+/* 
+ Animation Fire
+*/
+
+@keyframes fire {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+
+.large {
+  width: 25vmin;
+}
+	
+.glow {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    background: #ffac33;
+    z-index: -1;
+    animation: glow 4s infinite;
+  }
+  &::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 50%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    background: rgba(0,0,0,.15);
+    z-index: -1;
+    animation: glow 4s infinite;
+  }
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+    opacity: .4;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: .2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: .4;
+  }
+}
+
+
+.balloon {
+    width: 738px;
+
+    padding-bottom: 45px;
+    position: relative;
+}
+.balloon > div {
+   width: 100px;
+   height: 110px;
+   background: rgba(182, 15, 97, 0.9);
+   border-radius: 0;
+   border-radius: 80% 80% 80% 80%;
+   margin: 0 auto;
+   position: absolute;
+   padding: 10px;
+   box-shadow: inset 17px 7px 10px rgba(45, 181, 167, 0.9);
+   -webkit-transform-origin: bottom center;
+
+	}
+
+	.balloon > div:nth-child(1) {
+    background: rgba(45, 181, 167, 0.9);
+    left: 0;
+    box-shadow: inset 10px 10px 10px rgba(45, 181, 167, 0.9);
+  
+    animation: balloon1 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(1):before {
+    color: rgba(182, 15, 97, 0.9);
+}
+	
+.balloon > div:nth-child(2) {
+   background: rgba(242, 112, 45, 0.9);
+   left: 120px;
+   box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+
+    animation: balloon2 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(2):before {
+    color: rgba(242, 112, 45, 0.9);
+}
+	
+.balloon > div:nth-child(3) {
+	  background: rgba(182, 15, 97, 0.9);
+
+   left: 230px;
+   box-shadow: inset 10px 10px 10px  rgba(182, 15, 97, 0.9);
+    animation: balloon4 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(3):before {
+     color: rgba(45, 181, 167, 0.9);
+}
+	
+	
+.balloon > div:nth-child(4) {
+    background: rgba(190, 61, 244, 0.9);
+    left: 350px;
+    box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+
+animation: balloon1 5s ease-in-out infinite;
+}
+.balloon > div:nth-child(4):before {
+color: rgba(190, 61, 244, 0.9);
+}
+
+	.balloon > div:nth-child(5) {
+background: rgba(180, 224, 67, 0.9);
+left: 490px;
+box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+
+animation: balloon3 5s ease-in-out infinite;
+}
+.balloon > div:nth-child(5):before {
+color: rgba(180, 224, 67, 0.9);
+}
+	
+	
+	
+	
+.balloon > div:nth-child(6) {
+background: rgba(242, 194, 58, 0.9);
+left: 590px;
+box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+
+animation: balloon2 3s ease-in-out infinite;
+}
+.balloon > div:nth-child(6):before {
+color: rgba(242, 194, 58, 0.9);
+}
+	
+	
+	
+	
+	
+	
+.balloon > div:before {
+color: rgba(182, 15, 97, 0.9);
+position: absolute;
+bottom: -11px;
+left: 52px;
+content:"▲";
+font-size: 1em;
+}
+
+.bb{
+font-size: 2.5em;
+color: white;
+position: relative;
+top: 8px;
+left: 50%;
+margin-left: -27px;
+	display: flex;
+	text-align: center;
+	font-weight: bold;
+}
+            /*BALLOON 1 4*/
+@-webkit-keyframes balloon1 {
+0%, 100% {
+-webkit-transform: translateY(0) rotate(-6deg);  
+}
+50% {
+-webkit-transform: translateY(-20px) rotate(8deg);
+    }
+}
+
+@keyframes balloon1 {
+0%, 100% {
+transform: translateY(0) rotate(-6deg);
+}
+50% {
+transform: translateY(-20px) rotate(8deg);
+}
+}
+/* BAllOON 2 5*/
+@-webkit-keyframes balloon2 {
+0%, 100% {
+-webkit-transform: translateY(0) rotate(6eg);
+}
+50% {
+-webkit-transform: translateY(-30px) rotate(-8deg);
+}
+}
+
+@keyframes balloon2 {
+0%, 100% {
+transform: translateY(0) rotate(6deg);
+}
+50% {
+transform: translateY(-30px) rotate(-8deg);
+}
+}
+/* BAllOON 0*/
+@-webkit-keyframes balloon3 {
+0%, 100% {
+-webkit-transform: translate(0, -10px) rotate(6eg);
+}
+50% {
+-webkit-transform: translate(-20px, 30px) rotate(-8deg);
+}
+}
+
+@keyframes balloon3 {
+0%, 100% {
+transform: translate(0, -10px) rotate(6eg);
+}
+50% {
+transform: translate(-20px, 30px) rotate(-8deg);
+}
+}
+/* BAllOON 3*/
+@-webkit-keyframes balloon4 {
+0%, 100% {
+-webkit-transform: translate(10px, -10px) rotate(-8eg);
+}
+50% {
+-webkit-transform: translate(-15px, 20px) rotate(10deg);
+}
+}
+
+
+@keyframes balloon4 {
+0%, 100% {
+transform: translate(10px, -10px) rotate(-8eg);
+}
+50% {
+transform: translate(-15px, 10px) rotate(10deg);
+}
+}
+
+
+
+	
+	</style>
+</head>
+
+<body>
+<div id="loading">
+
+	</div>
+
+
+<div class="img1"></div>
+<div class="container text-center p-0" style="position: absolute; top:66%; left: 50%; transform: translate(-50%,-50%);">
+<div class="balloon mb-5">
+                <div><span class="bb text-danger">&#x2764</span>
+                </div>
+                <div><span class="bb ">Y</span>
+                </div>
+                <div><span class="bb ">O</span>
+                </div>
+                <div><span class="bb">U</span>
+                </div>
+                <div><span class="bb">T</span>
+                </div>
+                <div><span class="bb">O</span>
+                </div>
+            </div>
+<h1  style="color:rgba(252,251,148,1.00);  font-size: 5vh; text-shadow: 1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00); letter-spacing: 1px;">Happy Birthday</h1> 
+
+<h2 style="color:rgba(252,251,148,1.00); font-size: 5.5vh; text-shadow: 1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00); letter-spacing: 1px;">Sweet Heart <span style="color: rgba(233,217,66,1.00); letter-spacing: 2px; z-index: 888;">Dipannita</span></h2>
+
+  
+</div>
+<canvas id="birthday"></canvas>
+
+<div class="container text-center" >
+        <div class="candle">
+                <div class="fire"></div>
+                <div class="fire"></div>
+                <div class="fire"></div>
+                <div class="fire"></div>
+                <div class="fire"></div>
+            </div>
+<div class="center large glow m-0" style="position: absolute;
+top:86%; 
+left:50%;  transform: translate(-50%, -50%); "><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.5" height="47.5" viewBox="0 0 47.5 47.5"><style>.st0{clip-path:url(#SVGID_2_);} .st1{fill:#939598;} .st2{fill:#F1F2F2;} .st3{fill:#CCD6DD;} .st4{fill:#8A4B38;} .st5{fill:#AD5540;} .st6{fill:#662113;} .st7{fill:#88C9F9;} .st8{fill:#FFAC33;} .st9{clip-path:url(#SVGID_4_);}</style><g id="g10_1_"><g transform="matrix(1.25 0 0 -1.25 0 47.5)" id="g12_1_"><defs><path id="SVGID_1_" d="M-4.8-4.8h47.5v47.5H-4.8z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" overflow="visible"/></clipPath><g id="g14_1_" class="st0"><g id="g20_1_"><path id="path22_1_" class="st1" d="M37 12c0-5.5-8.1-10-18-10S1 6.5 1 12s8.1 10 18 10 18-4.5 18-10"/></g><g id="g24_1_"><path id="path26_1_" class="st2" d="M37 14c0-5.5-8.1-10-18-10S1 8.5 1 14s8.1 10 18 10 18-4.5 18-10"/></g><g id="g28_1_"><path id="path30_1_" class="st3" d="M33.8 15c0-4.5-6.6-8.2-14.8-8.2S4.2 10.5 4.2 15c0 4.5 6.6 8.2 14.8 8.2s14.8-3.7 14.8-8.2"/></g><g id="g32_1_"><path id="path34_1_" class="st4" d="M30 15c0-3.1-4.9-5.6-11-5.6S8 11.9 8 15s4.9 5.6 11 5.6 11-2.5 11-5.6"/></g><g id="g36_1_"><path id="path38_1_" class="st5" d="M32.403 14.957c0-3.9-6-7-13.4-7s-13.4 3.2-13.4 7c0 3.9 6 7 13.4 7s13.4-3.1 13.4-7"/></g><g id="g40_1_"><path id="path42_1_" class="st6" d="M32 16c0-9-26-9-26 0v8h26v-8z"/></g><g id="g44_1_"><path id="path46_1_" class="st5" d="M32.403 24.956c0-3.9-6-7-13.4-7s-13.4 3.2-13.4 7 6 7 13.4 7 13.4-3.1 13.4-7"/></g><g id="g48_1_"><path id="path50_1_" class="st7" d="M12 24c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1s1-.4 1-1v-7c0-.6-.4-1-1-1"/></g><g id="g52_1_"><path id="path54_1_" class="st7" d="M19 21c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1s1-.4 1-1v-7c0-.6-.4-1-1-1"/></g><g id="g56_1_"><path id="path58_1_" class="st7" d="M26 24c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1s1-.4 1-1v-7c0-.6-.4-1-1-1"/></g><g id="g60_1_"><path id="path62_1_" class="st8" d="M26 30.5c-1.1 0-1.9.5-2.2 1.3-.3.7-.5 2.2 1.8 4.6.2.1.6.1.8 0 2.3-2.4 2.1-3.9 1.8-4.6-.3-.8-1.1-1.3-2.2-1.3"/></g><g id="g64_1_"><path id="path66_1_" class="st8" d="M19 27.5c-1.1 0-1.9.5-2.2 1.3-.3.7-.5 2.2 1.8 4.6.2.1.6.1.8 0 2.3-2.4 2.1-3.9 1.8-4.6-.3-.8-1.1-1.3-2.2-1.3"/></g><g id="g68_1_"><path id="path70_1_" class="st8" d="M12 30.5c-1.1 0-1.9.5-2.2 1.3-.3.7-.5 2.2 1.8 4.6.2.1.6.1.8 0 2.3-2.4 2.1-3.9 1.8-4.6-.3-.8-1.1-1.3-2.2-1.3"/></g></g></g></g></svg>
+
+
+</div>
+
+</div>
+
+<script>
+// helper functions
+const PI2 = Math.PI * 2
+const random = (min, max) => Math.random() * (max - min + 1) + min | 0
+const timestamp = _ => new Date().getTime()
+
+// container
+class Birthday {
+  constructor() {
+    this.resize()
+
+    // create a lovely place to store the firework
+    this.fireworks = []
+    this.counter = 0
+
+  }
+  
+  resize() {
+    this.width = canvas.width = window.innerWidth
+    let center = this.width / 2 | 0
+    this.spawnA = center - center / 4 | 0
+    this.spawnB = center + center / 4 | 0
+    
+    this.height = canvas.height = window.innerHeight
+    this.spawnC = this.height * .1
+    this.spawnD = this.height * .5
+    
+  }
+  
+  onClick(evt) {
+     let x = evt.clientX || evt.touches && evt.touches[0].pageX
+     let y = evt.clientY || evt.touches && evt.touches[0].pageY
+     
+     let count = random(3,5)
+     for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        x,
+        y,
+        random(0, 260),
+        random(30, 110)))
+          
+     this.counter = -1
+     
+  }
+  
+  update(delta) {
+    ctx.globalCompositeOperation = 'hard-light'
+    ctx.fillStyle = `rgba(20,20,20,${ 7 * delta })`
+    ctx.fillRect(0, 0, this.width, this.height)
+
+    ctx.globalCompositeOperation = 'lighter'
+    for (let firework of this.fireworks) firework.update(delta)
+
+    // if enough time passed... create new new firework
+    this.counter += delta * 3 // each second
+    if (this.counter >= 1) {
+      this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        random(0, this.width),
+        random(this.spawnC, this.spawnD),
+        random(0, 360),
+        random(30, 110)))
+      this.counter = 0
+    }
+
+    // remove the dead fireworks
+    if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
+
+  }
+}
+
+class Firework {
+  constructor(x, y, targetX, targetY, shade, offsprings) {
+    this.dead = false
+    this.offsprings = offsprings
+
+    this.x = x
+    this.y = y
+    this.targetX = targetX
+    this.targetY = targetY
+
+    this.shade = shade
+    this.history = []
+  }
+  update(delta) {
+    if (this.dead) return
+
+    let xDiff = this.targetX - this.x
+    let yDiff = this.targetY - this.y
+    if (Math.abs(xDiff) > 3 || Math.abs(yDiff) > 3) { // is still moving
+      this.x += xDiff * 2 * delta
+      this.y += yDiff * 2 * delta
+
+      this.history.push({
+        x: this.x,
+        y: this.y
+      })
+
+      if (this.history.length > 20) this.history.shift()
+
+    } else {
+      if (this.offsprings && !this.madeChilds) {
+        
+        let babies = this.offsprings / 2
+        for (let i = 0; i < babies; i++) {
+          let targetX = this.x + this.offsprings * Math.cos(PI2 * i / babies) | 0
+          let targetY = this.y + this.offsprings * Math.sin(PI2 * i / babies) | 0
+
+          birthday.fireworks.push(new Firework(this.x, this.y, targetX, targetY, this.shade, 0))
+
+        }
+
+      }
+      this.madeChilds = true
+      this.history.shift()
+    }
+    
+    if (this.history.length === 0) this.dead = true
+    else if (this.offsprings) { 
+        for (let i = 0; this.history.length > i; i++) {
+          let point = this.history[i]
+          ctx.beginPath()
+          ctx.fillStyle = 'hsl(' + this.shade + ',100%,' + i + '%)'
+          ctx.arc(point.x, point.y, 1, 0, PI2, false)
+          ctx.fill()
+        } 
+      } else {
+      ctx.beginPath()
+      ctx.fillStyle = 'hsl(' + this.shade + ',100%,50%)'
+      ctx.arc(this.x, this.y, 1, 0, PI2, false)
+      ctx.fill()
+    }
+
+  }
+}
+
+let canvas = document.getElementById('birthday')
+let ctx = canvas.getContext('2d')
+
+let then = timestamp()
+
+let birthday = new Birthday
+window.onresize = () => birthday.resize()
+document.onclick = evt => birthday.onClick(evt)
+document.ontouchstart = evt => birthday.onClick(evt)
+
+  ;(function loop(){
+  	requestAnimationFrame(loop)
+
+  	let now = timestamp()
+  	let delta = now - then
+
+    then = now
+    birthday.update(delta / 1000)
+  	
+
+  })()
+	</script>
+	
+	
+	
+	<script>
+    
+    
+    var overlay = document.getElementById("loading");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
+</script>	
+
+</body>
+</html>
