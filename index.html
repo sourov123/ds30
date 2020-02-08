@@ -414,14 +414,40 @@ transform: translate(-15px, 10px) rotate(10deg);
                 <div><span class="bb">O</span>
                 </div>
             </div>
-<h1  style="color:rgba(252,251,148,1.00);  font-size: 3.5vh; text-shadow: 1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00); letter-spacing: 1px;">🌹Happy Rose Day 🌹</h1> 
+<h1  style="color:rgba(252,251,148,1.00);  font-size: 3.5vh; text-shadow: 1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00); letter-spacing: 1px;" id="demo"></h1> 
 
 <h3 style="color:rgba(252,251,148,1.00); font-size: 3vh; text-shadow: 1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00),1px 1px 2px rgba(255,7,92,1.00); letter-spacing: 1px;">♥️ Sweet Heart ♥️</h3>
 
   
 </div>
 <canvas id="birthday"></canvas>
-
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();
+  if(n=="2020-2-8"){
+  document.getElementById("demo").innerHTML = "Happy Propose Day";
+  }
+	 elseif(n=="2020-2-9"){
+  document.getElementById("demo").innerHTML = "🌹 Happy Chocolate Day 🌹";
+  }
+	 elseif(n=="2020-2-10"){
+  document.getElementById("demo").innerHTML = "🌹 Happy Teddy Day 🌹";
+  }
+	 elseif(n=="2020-2-11"){
+  document.getElementById("demo").innerHTML = "🌹 Happy Promise Day 🌹";
+  }
+		 elseif(n=="2020-2-12"){
+  document.getElementById("demo").innerHTML = "🌹 Happy Kiss Day 🌹";
+  }
+			 elseif(n=="2020-2-13"){
+  document.getElementById("demo").innerHTML = "🌹 Happy Hug Day 🌹";
+  }
+				 else(n=="2020-2-14"){
+  document.getElementById("demo").innerHTML = "Happy VALENTINE'S DAY";
+  }
+}
+</script>
 
 
 <script>
