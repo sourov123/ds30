@@ -421,33 +421,7 @@ transform: translate(-15px, 10px) rotate(10deg);
   
 </div>
 <canvas id="birthday"></canvas>
-<script>
 
-  var d = new Date();
-  var n = d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();
-  if(n=="2020-2-8"){
-  document.getElementById("demo").innerHTML = "Happy Propose Day";
-  }
-	 else if(n=="2020-2-9"){
-  document.getElementById("demo").innerHTML = "🌹 Happy Chocolate Day 🌹";
-  }
-	 else if(n=="2020-2-10"){
-  document.getElementById("demo").innerHTML = "🌹 Happy Teddy Day 🌹";
-  }
-	 else if(n=="2020-2-11"){
-  document.getElementById("demo").innerHTML = "🌹 Happy Promise Day 🌹";
-  }
-		 else if(n=="2020-2-12"){
-  document.getElementById("demo").innerHTML = "🌹 Happy Kiss Day 🌹";
-  }
-			 else if(n=="2020-2-13"){
-  document.getElementById("demo").innerHTML = "🌹 Happy Hug Day 🌹";
-  }
-				 else(n=="2020-2-14"){
-  document.getElementById("demo").innerHTML = "Happy VALENTINE'S DAY";
-  }
-
-</script>
 
 
 <script>
@@ -621,6 +595,26 @@ document.ontouchstart = evt => birthday.onClick(evt)
 window.addEventListener('load', function(){
   overlay.style.display = 'none';
 })
+		
+		
+		
+		  var d = new Date();
+  var n = d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();
+  if(n=="2020-2-8"){
+  document.getElementById("demo").innerHTML = "Happy Propose Day";
+  }
+	 else if(n=="2020-2-9"){
+  document.getElementById("demo").innerHTML = "Happy Chocolate Day";
+  }
+   else if(n=="2020-2-10"){
+  document.getElementById("demo").innerHTML = "Happy Teddy Day";
+  }
+		   else if(n=="2020-2-11"){
+  document.getElementById("demo").innerHTML = "Happy Promise Day";
+  }
+		   else if(n=="2020-2-12"){
+  document.getElementById("demo").innerHTML = "Happy Kiss Day";
+  }
 </script>	
 
 </body>
