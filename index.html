@@ -593,7 +593,8 @@ document.ontouchstart = evt => birthday.onClick(evt)
     var overlay = document.getElementById("loading");
 
 window.addEventListener('load', function(){
-  overlay.style.display = 'none';
+setTimeout(function(){ overlay.style.display = 'none'; }, 8000);
+  
 })
 		
 		
